@@ -1,53 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Business - Connect With Us</title>
-		<link href="css/jquery.bxslider.css" rel="stylesheet" />
-		<link href="style.css" rel="stylesheet">
-		<link href="css/nav.css" rel="stylesheet">
-	</head>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--- proximo eh para compatibilidade movel -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--- aqui começa referenciacao das stylesheets -->
+	<title>Business - Connect With Us</title>
+	<link href="nav.css" rel="stylesheet" />
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+	<link href="css/nav.css" rel="stylesheet" />
+</head>
+
 <body>
+<!--- Start Wrapper -->
+	<div id="wrapper">
+<!--- Start Header -->
+<!--- This is everything above navigation -->
+		<header>
+			<div id="callout">
+				<h2>&#9742;808.828.8008</h2> <!--o &# eh decimal html para o char telefone -->
+			</div>
+			<div id="logo">
+				<a href="index.html"><img src="img/biz_logo.png"></a>
+			</div>
+		</header>
+<!--- End Header -->
+	<div id="clearfix"> <!--- este div eh para usar com um estilo css para ter uma linha horizontal invisivel que faz com que mais nenhum elemento possa ficar a direita ou esq deste div. Isto faz com que funcione bem depois em mobile, sem nada lado a lado com o slider+nav -->
+	
+		
+	</div>
+<!--- Start Nav & Slider -->
+	<div id="banner-wrapper">
+<!--- Start Nav -->
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/main.js"></script>
+	<div id="nav"></div>
+<!--- End Nav -->
+
+
 <!--- Start Slider -->
-		<script src="js/jquery.bxslider.min.js"></script><!--For Image Slider-->
+		<script src="js/jquery.bxslider.min.js"></script>
+<!--For Image Slider-->
 		<div class="slide-wrap">
 
-<!--- ADD IMAGE SLIDES HERE! -->
+			<script type="text/javascript">
+				$('.slider1').bxSlider({
+					mode: 'fade',
+					captions: false,
+					auto: true,
+					pager: false,
+
+				});
+				$('.slider2').bxSlider({
+					pager: false,
+					captions: false,
+					maxSlides: 3,
+					minSlides: 1,
+					slideWidth: 230,
+					slideMargin: 10
+				});
+				$('.slider3').bxSlider({
+					mode: 'fade',
+					captions: false,
+					auto: true,
+					pager: false,
+					controls: false,
+				});
+			</script>
+<!--- End Slider -->
+	</div>
+<!--- Ending Nav & Slider -->
 
 		</div>
-		<script type="text/javascript">
-			$('.slider1').bxSlider({
-				mode: 'fade',
-				captions: false,
-				auto:true,
-				pager:false,
-				
-			});
-			$('.slider2').bxSlider({
-				pager:false,
-				captions: false,
-				maxSlides: 3,
-				minSlides: 1,
-				slideWidth: 230,
-				slideMargin: 10
-			});
-			$('.slider3').bxSlider({
-				mode: 'fade',
-				captions: false,
-				auto:true,
-				pager:false,
-				controls:false,
-			});
-		</script>
-<!--- End Slider -->
+<!--- End Wrapper -->
 
 
 
+</body>
 
-
-
-  <p style="text-align: center;"><a href="https://www.w3newbie.com/survey/" target="_blank">Designed by Drew Ryan - w3newbie</a></p>
-	</body>
 </html>
